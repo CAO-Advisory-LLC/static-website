@@ -1,6 +1,9 @@
 # Source code for static website
 Source code for caoadvisoryllc.com
 
+## TODO
+- figure out how to access other non-JS files from a JS file (Express?)
+
 ## npm (dev) commands
 `npm install` to install all dev dependencies.<br>
 `npm outdated` to check if any packages are outdated.<br>
@@ -29,7 +32,7 @@ Source code for caoadvisoryllc.com
   - linter, code styling
 - prettier
   - formatter, code layout formatter
-- jest
+- jest (may be removed later if not useful)
   - testing functions
-- babel
+- babel (may be removed later if not useful)
   - to fix jest's issues with imports

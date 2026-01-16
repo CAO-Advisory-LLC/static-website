@@ -4,6 +4,219 @@
 	margin: 0px;
 }
 
+/* general font */
 body {
-	padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* intro: dark background */
+.content-intro {
+    background-color: #1F2937;
+}
+
+/* intro title: white text */
+.content-intro .title {
+    color: #F9FAF8;
+}
+
+/* intro title: 48px, weight 900 */
+.content-intro .title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+/* intro subtext: unspecified, setting to 18px */
+.content-intro .subtext {
+    font-size: 18px;
+}
+
+/* intro subtext, info subtext: light gray text */
+.content-intro .subtext {
+    color: #E5E7EB;
+}
+
+/* button color, call to action background: blue */
+button, .content-signup .box {
+    background-color: #3882F6;
+    /* round corners */
+    border-radius: 10px;
+}
+
+/* button text color: not specified, setting to white */
+button {
+    color: #F9FAF8;
+}
+
+/* info header text: black, 36px, weight 900 */
+.content-info .title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+/* info pictures: seems to have rounded corners and blue borders */
+.content-info img {
+    border-radius: 10px;
+    border: 4px solid #3882F6;
+}
+
+/* info subtext: not specified, going with gray, 20px */
+.content-info .subtext {
+    color: #6a6a6a;
+    font-size: 20px;
+}
+
+/* quote background: light gray */
+.content-quote {
+    background-color: #E5E7EB
+}
+
+/* quote: black, 36px, light italic */
+.content-quote .quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* quoter: nothing specified */
+.content-quote .quoter {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* signup title: unspecified, white, 24px */
+.content-signup .title {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* signup subtext: unspecified, light gray, 18px */
+.content-signup .subtext {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-intro {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.content-intro .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+}
+/* increase line spacing */
+.content-intro .text .title {
+    line-height: 1.2;
+}
+.content-intro .text .subtext {
+    line-height: 1.4;
+}
+.content-intro .text .signup1 {
+    /* flexbox seems to mess with setting left and right padding, so have to set width */
+    width: 120px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* border: 4px solid #3882F6; */
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content-intro img {
+    width: 500px;
+}
+
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.content-info .title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.content-info .info-boxes {
+    display: flex;
+}
+.content-info .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-info img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.content-info .subtext {
+    text-align: center;
+    /* can't figure out how to make textbox size based on img width, so I'm just eyeballing it */
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+
+.content-quote {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.content-quote .quote {
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.content-quote .quoter {
+    text-align: end;
+}
+
+
+.content-signup {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.content-signup .box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.content-signup .title {
+    margin-bottom: 10px;
+}
+.content-signup .signup2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #F9FAF8;
+    font-size: 18px;
+    font-weight: 500;
 }
