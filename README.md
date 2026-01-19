@@ -2,7 +2,10 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- figure out how to access other non-JS files from a JS file (Express?)
+- (low priority) use EJS and Express.JS to make headers and footers common
+
+## Notes
+- header.html, footer.html, load.js are currently doing nothing, though they may be used as reference for later optimizations
 
 ## npm (dev) commands
 `npm install` to install all dev dependencies.<br>
