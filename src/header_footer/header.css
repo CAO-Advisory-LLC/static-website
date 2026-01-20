@@ -29,8 +29,7 @@ header .links {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    /* removes list indentation */
-    padding: 0;
+    padding: 10px;
     /* removes bullet point */
     list-style: none;
 }
@@ -43,4 +42,11 @@ header .logo {
 header .links a {
     /* remove link underlines */
     text-decoration: none;
+    
+    /* purely to center the link text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
 }
