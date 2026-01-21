@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
+// based off of: https://stackoverflow.com/a/60021512
 const generateHtmlPlugin = (title) => {
     return new HtmlWebpackPlugin({
         // not sure what the function of this is
@@ -26,7 +27,25 @@ const populateHtmlPlugins = (pagesArray) => {
     })
     return res;
 }
-const pages = populateHtmlPlugins(["About", "Contact"]);
+const pages = populateHtmlPlugins(["Resources", "About", "Contact"]);
+const header_footer = [
+    new HtmlWebpackPlugin({
+        // not sure what the function of this is
+        title: "Header",
+        // the path/URL entered to reach this page: "http://localhost:8080/{filename}"
+        filename: "src/header_footer/header.html",
+        // the html path in this project to link to the filename
+        template: "./src/header_footer/header.html",
+    }),
+    new HtmlWebpackPlugin({
+        // not sure what the function of this is
+        title: "Footer",
+        // the path/URL entered to reach this page: "http://localhost:8080/{filename}"
+        filename: "src/header_footer/footer.html",
+        // the html path in this project to link to the filename
+        template: "./src/header_footer/footer.html",
+    }),
+];
 
 
 module.exports = {
@@ -40,7 +59,7 @@ module.exports = {
     devServer: {
         watchFiles: ["./src/pages/home/index.html"],
     },
-    plugins: pages,
+    plugins: pages.concat(header_footer),
     module: {
         rules: [
             {

@@ -2,9 +2,7 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- get details on home page contents
-- figure out how to link between pages (see express redirect)
-- (low priority) use EJS and Express.JS to make headers and footers common
+- start making home page
 
 ## Notes
 - header.html, footer.html, load.js are currently doing nothing, though they may be used as reference for later optimizations
