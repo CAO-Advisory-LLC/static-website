@@ -27,8 +27,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    width: 500px;
+    width: 800px;
 }
 /* increase line spacing */
 #business-msg .container .title {
@@ -36,11 +37,13 @@ body {
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
+    text-align: center;
 }
 #business-msg .container .subtext {
     color: #E5E7EB;
     font-size: 18px;
     line-height: 1.4;
+    text-align: center;
 }
 #business-msg .container button {
     color: #F9FAF8;
@@ -48,7 +51,7 @@ body {
     /* round corners */
     border-radius: 10px;
     /* flexbox seems to mess with setting left and right padding, so have to set width */
-    width: 120px;
+    width: 200px;
     padding-top: 4px;
     padding-bottom: 4px;
     /* border: 4px solid #3882F6; */
@@ -63,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     /* top, right, bottom, left */
-    padding: 75px 150px 75px 150px;
+    padding: 75px 100px 75px 100px;
 }
 #success-stories .title {
     color: #1F2937;
@@ -72,10 +75,10 @@ body {
     text-align: center;
     padding-bottom: 30px;
 }
-#success-stories .info-boxes {
+#success-stories .stories {
     display: flex;
 }
-#success-stories .info-box {
+#success-stories .story {
     display: flex;
     flex-direction: column;
     align-items: center;
