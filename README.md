@@ -2,10 +2,11 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- start making home page
+- implement the base homepage design
+- add home page contents
 
 ## Notes
-- header.html, footer.html, load.js are currently doing nothing, though they may be used as reference for later optimizations
+- none for now
 
 ## npm (dev) commands
 `npm install` to install all dev dependencies.<br>
