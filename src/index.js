@@ -1,3 +1,4 @@
+import "./styles/common.css";
 import "./styles/home.css";
 import "./styles/header.css";
 import "./styles/footer.css";

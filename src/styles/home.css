@@ -1,52 +1,24 @@
-/* This is here purely for development, comment it out for release */
-* {
-	/* outline: 1px solid red; */
-	margin: 0px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* overflow-x: scroll;
-    overflow-y: scroll;
-    height: 100%; */
-    line-height: 1.2;
-}
-
-
-
 #business-msg {
     background-color: #2f3c4e;
-    display: flex;
-    justify-content: space-around;
-    /* top, right, bottom, left */
-    padding: 75px 150px 75px 150px;
-}
-#business-msg .container {
+    /* just to center the contents */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 800px;
+    /* top, right, bottom, left */
+    padding: 75px 200px 75px 200px;
 }
-/* increase line spacing */
-#business-msg .container .title {
+#business-msg .title {
     color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 900;
-    /* line-height: 1.2; */
     text-align: center;
 }
-#business-msg .container .subtext {
+#business-msg .subtext {
     color: #E5E7EB;
-    font-size: 18px;
     line-height: 1.4;
     text-align: center;
 }
-#business-msg .container button {
+#business-msg button {
     color: #F9FAF8;
     background-color: #3882F6;
     /* round corners */
@@ -66,15 +38,14 @@ body {
 #success-stories {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+
     /* top, right, bottom, left */
     padding: 75px 100px 75px 100px;
 }
-#success-stories .title {
+#success-stories .header {
     color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
     text-align: center;
-    padding-bottom: 30px;
 }
 #success-stories .stories {
     display: flex;
@@ -95,27 +66,28 @@ body {
 }
 #success-stories .subtext {
     color: #6a6a6a;
-    font-size: 20px;
     text-align: center;
-    /* can't figure out how to make textbox size based on img width, so I'm just eyeballing it */
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
 
 #methods {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
     background-color: #E5E7EB;
     /* top, right, bottom, left */
     padding: 75px 50px 75px 50px;
+
+    /* text color */
     color: #1F2937;
 }
-#methods .title {
+#methods .header {
     color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
     text-align: center;
-    padding-bottom: 30px;
 }
 #methods .grid {
     display: grid;
@@ -138,57 +110,35 @@ body {
 #methods .detail {
     background-color: #e9edf4;
 }
-#methods .quote {
-    color: #1F2937;
-    font-size: 36px;
-    font-weight: lighter;
-    font-style: italic;
-    /* line-height: 1.2; */
-    margin-bottom: 20px;
-}
-#methods .quoter {
-    color: #1F2937;
-    font-size: 24px;
-    font-weight: 900;
-    text-align: end;
-}
 
 
 
 #call-to-action {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     /* top, right, bottom, left */
     padding: 75px 150px 75px 150px;
 }
-#call-to-action .box {
-    background-color: #3882F6;
-    /* round corners */
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-#call-to-action .title {
-    color: #F9FAF8;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
+#call-to-action .header {
+    color: #1F2937;
+    text-align: center;
 }
 #call-to-action .subtext {
-    color: #E5E7EB;
-    font-size: 18px;
+    color: #1F2937;
+    text-align: center;
 }
-#call-to-action button {
+#call-to-action .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+#call-to-action .buttons button {
     color: #F9FAF8;
-    background-color: #3882F6;
+    background-color: #a6a9ad;
     /* round corners */
     border-radius: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    /* top, right, bottom, left */
+    padding: 8px 40px 8px 40px;
     border: 2px solid #F9FAF8;
     font-size: 18px;
     font-weight: 500;
