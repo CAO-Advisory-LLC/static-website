@@ -1,5 +1,5 @@
-header {
-    background-color: #1F2937;
+#header {
+    background-color: var(--light-bg);
 
     display: flex;
     justify-content: space-between;
@@ -9,18 +9,18 @@ header {
     /* make header stick to the top of the page */
     position: sticky;
     top: 0;
+
+    /* consider choosing a different font for header specifically */
 }
-header .logo {
+#header .logo {
     display: block;
-    color: #F9FAF8;
-    font-size: 24px;
 
     /* note: setting margin to auto vertically centers it */
     margin-top: auto;
     margin-bottom: auto;
     /* padding: 10px; */
 }
-header .links {
+#header .links {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -28,8 +28,8 @@ header .links {
     /* removes bullet point */
     list-style: none;
 }
-header .links a {
-    color: #E5E7EB;
+#header .links a {
+    color: var(--dark-text);
     font-size: 18px;
 
     /* remove link underlines */

@@ -1,3 +1,15 @@
+:root {
+    /* theme colors by color name */
+    --dark-blue: #00458b;
+    --white: #ffffff;
+
+    /* theme colors by color function */
+    --dark-text: var(--dark-blue);
+    --light-bg: var(--white);
+    --light-text: var(--white);
+    --dark-bg: var(--dark-blue);
+}
+
 * {
     /* This is here purely for development, comment it out for release */
 	outline: 1px solid red;

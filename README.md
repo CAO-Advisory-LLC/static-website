@@ -2,7 +2,7 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- implement the base homepage design
+- implement common color theme
 - add home page contents
 
 ## Notes
