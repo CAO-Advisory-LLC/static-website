@@ -1,9 +1,11 @@
 import "./styles/fonts.css";
 import "./styles/theme.css";
 import "./styles/common.css";
-import "./styles/home.css";
 import "./styles/header.css";
 import "./styles/footer.css";
+
+import "./styles/home.css";
+import "./styles/about.css";
 
 function init() {
     console.log("Hello world!");

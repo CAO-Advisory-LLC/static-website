@@ -1,5 +1,6 @@
 :root {
     /* theme colors by color name */
+    --light-blue: #ebf3ff;
     --blue: #3882F6;
     --dark-blue: #003060;
     --dark-gray-blue: #2f3c4e;
@@ -9,10 +10,19 @@
     --soft-gray: #a6a9ad;
 
 
+
     /* theme colors by color function */
+
+
+    /* site header and footer */
     --header-color: white;
     --header-text-color: var(--dark-blue);
 
+    --footer-color: var(--dark-blue);
+    --footer-text-color: white;
+
+
+    /* home page */
     --sec1-bg-color: var(--light-blue-gray);
     --sec1-title-color: black;
     --sec1-subtext-color: var(--dark-blue-gray);
@@ -22,6 +32,7 @@
     --sec2-bg-color: white;
     --sec2-header-color: black;
     --sec2-story-border-color: black;
+    --sec2-story-bg-color: var(--light-blue);
     --sec2-img-border-color: var(--gray);
     --sec2-subtext-color: var(--gray);
 
@@ -38,6 +49,7 @@
     --sec4-btn-color: var(--blue);
     --sec4-btn-text-color: white;
 
-    --footer-color: var(--dark-blue);
-    --footer-text-color: white;
+    
+    /* about us page */
+    
 }
