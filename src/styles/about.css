@@ -5,7 +5,25 @@
 
 
 
-#individuals {
+#team {
     /* top, right, bottom, left */
     padding: 75px 100px 75px 100px;
+}
+#team .header {
+    margin-bottom: 20px;
+}
+#team .people {
+    display: flex;
+    gap: 10px;
+}
+#team .person {
+    /* horizontal offset, vertical offset, blur radius, spread radius, color */
+    box-shadow: 0 0 10px -4px gray;
+    border-radius: 6px;
+    padding: 10px;
+
+    display: flex;
+}
+#team .person * {
+    padding: 10px;
 }
