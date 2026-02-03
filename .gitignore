@@ -43,3 +43,6 @@ Thumbs.db
 # dist is auto-generated upon bundling/building with "npx webpack"
 node_modules
 dist
+
+# VScode #
+.vscode
