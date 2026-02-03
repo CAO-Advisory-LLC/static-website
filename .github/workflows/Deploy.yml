@@ -1,9 +1,7 @@
-name: Deploy Webpack to GitHub Pages v1
+name: Deploy Webpack to GitHub Pages v2
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
 
 jobs:
@@ -15,7 +13,8 @@ jobs:
         node-version: [18.x, 20.x, 22.x]
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
@@ -28,18 +27,9 @@ jobs:
     - name: Build the application
       run: npm run build
     
-    - name: Deploy GitHub Pages site
-      uses: actions/deploy-pages@v4.0.5
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        # GitHub token
-        token: # default is ${{ github.token }}
-        # Time in milliseconds after which to timeout and cancel the deployment (default: 10 minutes)
-        timeout: # optional, default is 600000
-        # Maximum number of status report errors before cancelling a deployment (default: 10)
-        error_count: # optional, default is 10
-        # Time in milliseconds between two deployment status report (default: 5 seconds)
-        reporting_interval: # optional, default is 5000
-        # Name of the artifact to deploy
-        artifact_name: # optional, default is github-pages
-        # Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!)
-        preview: # optional, default is false
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist  # Adjust if your output directory is different
+        publish_branch: gh-pages  # deploy to gh-pages branch
