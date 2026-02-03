@@ -2,8 +2,7 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- implement common color theme
-- add home page contents
+- fix the github pages site
 
 ## Notes
 - none for now
