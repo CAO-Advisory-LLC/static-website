@@ -2,7 +2,7 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- fix the github pages site
+- fix headers and footers on subpages
 
 ## Notes
 - none for now

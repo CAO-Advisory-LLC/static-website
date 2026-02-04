@@ -8,7 +8,10 @@ import "./styles/home.css";
 import "./styles/about.css";
 
 function init() {
-    console.log("Hello world!");
+    console.log("Hello! The index.js (aka main.js) has been run!");
+    const regex = new RegExp("/", "g");
+    const matches = window.location.pathname.match(regex).length;
+    console.log(matches);
 }
 init();
 
@@ -19,19 +22,26 @@ async function loadHeaderFooter() {
     try {
         // Fetch the external HTML files
         // Note: the path here should be the expected path in the built dist, not the path in src, you can see/configure this path in webpack.common.js in the const header_footer (filename)
-        let headerFile = await fetch("header_footer/header.html");
-        let footerFile = await fetch("header_footer/footer.html");
+        let headerFile;
+        let footerFile;
 
-        // if failed, try another possible path
-        if (!response.ok) {
+        // kinda scuffed ngl, but if it works...
+        const urlPath = window.location.pathname;
+        const regex = new RegExp("/", "g");
+        const matches = urlPath.match(regex).length;
+
+        // home/root page
+        if(matches === 1) {
+            headerFile = await fetch("header_footer/header.html");
+            footerFile = await fetch("header_footer/footer.html");
+        }
+        // first degree subpages
+        // Notes: dev server interacts with this strangely, and only counts 1 "/", but still functions correctly
+        else if(matches === 2) {
             headerFile = await fetch("../header_footer/header.html");
             footerFile = await fetch("../header_footer/footer.html");
-
-            // if still failed, IDK what the problem is
-            if(!response.ok) {
-                throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
-            }
         }
+        
         
         // Extract HTML text from the responses
         const headerHTML = await headerFile.text();
