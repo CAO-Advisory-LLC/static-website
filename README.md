@@ -2,7 +2,9 @@
 Source code for caoadvisoryllc.com
 
 ## TODO
-- fix headers and footers on subpages
+- find pictures for homepage
+- resources page structure
+- contact page basic structure
 
 ## Notes
 - none for now
@@ -35,7 +37,3 @@ Source code for caoadvisoryllc.com
   - linter, code styling
 - prettier
   - formatter, code layout formatter
-- jest (may be removed later if not useful)
-  - testing functions
-- babel (may be removed later if not useful)
-  - to fix jest's issues with imports
