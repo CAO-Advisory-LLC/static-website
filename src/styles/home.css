@@ -67,11 +67,12 @@
     /* grow, shrink, basis */
     flex: 1 1 0px;
 }
-#success-stories img {
+#success-stories .story .icon {
     border-radius: 10px;
     border: 4px solid var(--sec2-img-border-color);
     width: 60%;
     margin: 20px;
+    padding: 4px;
 }
 #success-stories .summary {
     color: var(--sec2-text-color);
